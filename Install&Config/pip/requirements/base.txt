@@ -1,0 +1,35 @@
+
+
+# HTTP:
+requests
+
+simplejson==3.6.5
+
+# MQ:
+celery
+pika
+
+
+# DB, ORM:
+pymongo
+mongoengine
+redis
+
+MySQL-python==1.2.5
+SQLAlchemy==0.9.8
+
+
+# Docker:
+docker-py==1.1.0
+
+
+# IMAGE:
+# python x64bit
+Pillow
+
+# python x32bit
+#pil
+
+
+
+
