@@ -11,7 +11,7 @@
 ### 查看系统信息:
 
 
-```
+```bash
 # 查看版本:
 lsb_release -a
 
@@ -22,3 +22,19 @@ Release:        6.8
 Codename:       Final
 
 ```
+
+
+
+### 更改 centos 默认语言:
+
+```bash
+echo $LANG
+LANG="en_US.UTF-8"
+logout
+
+```
+
+
+### 更改 centos 源:
+- [参考163官网说明:](http://mirrors.163.com/.help/centos.html)
+
