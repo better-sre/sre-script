@@ -41,6 +41,7 @@ function yum_install_oracle_require_libs() {
     sudo yum install -y numactl-devel
     sudo yum install -y pcre-devel
     sudo yum install -y glibc.i686
+    sudo yum install -y pdksh
 
 }
 
