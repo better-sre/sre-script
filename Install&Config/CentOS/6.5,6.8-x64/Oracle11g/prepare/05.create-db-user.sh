@@ -15,6 +15,9 @@ function create_user_group() {
     # set oracle-user-password: [oracle]
     sudo echo "oracle" | passwd --stdin oracle
 
+    # check:
+    id oracle
+
 }
 
 
