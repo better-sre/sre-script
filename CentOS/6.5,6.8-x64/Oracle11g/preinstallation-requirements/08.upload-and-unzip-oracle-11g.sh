@@ -16,6 +16,8 @@ cd ${DEPLOY_BASE}
 pwd
 
 
+
+# 解压 Oracle 安装包:
 unzip linux.x64_11gR2_database_1of2.zip
 unzip linux.x64_11gR2_database_2of2.zip
 
