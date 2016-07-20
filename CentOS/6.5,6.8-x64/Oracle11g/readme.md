@@ -76,8 +76,23 @@
 
 
 
+#### 3.3 centos 转 redhat 欺骗脚本:
+- [Oracle 官网参考](https://linux.oracle.com/switch/centos/)
+- [参考](https://www.digitalocean.com/community/questions/how-can-i-install-oracle-11g)
+- 备注: 此 centos2ol.sh 脚本, 不建议使用, 经测试, 图形界面安装 Oracle 11g, 不需要执行此脚本.
 
 
+```
+
+# 欺骗脚本:
+curl -O https://linux.oracle.com/switch/centos2ol.sh 
+sh centos2ol.sh
+
+# 安装 Oracle 依赖包:
+yum install oracle-rdbms-server-11gR2-preinstall  -y
+
+
+```
 
 
 
