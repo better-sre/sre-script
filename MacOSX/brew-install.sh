@@ -6,7 +6,13 @@ brew install mercurial
 brew install subversion
 
 brew install tmux
+
 brew install zsh
+
+# 切换zsh为默认shell
+# chsh -s $(whereis zsh)
+chsh -s /bin/zsh
+
 brew install fish
 brew install mobile-shell
 
