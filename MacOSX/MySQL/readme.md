@@ -64,3 +64,10 @@ mysql> quit;
 
 
 ```
+
+
+
+## 问题解决:
+
+
+- [Table 'performance_schema.session_variables' doesn't exist](http://stackoverflow.com/questions/31967527/table-performance-schema-session-variables-doesnt-exist)
