@@ -1,0 +1,77 @@
+######################################################################
+# 初始化说明:
+#   - 执行 brew install mysql, 下一步, 就是根据提示, 执行本脚本命令.
+#   - 根据提示, 一步步往下走.
+#   - 结束之后, 登录 MySQL 验证: mysql -uroot -p
+#
+######################################################################
+
+
+-> % mysql_secure_installation
+
+mysql_secure_installation: [ERROR] unknown variable 'default-character-set=utf8'
+
+Securing the MySQL server deployment.
+
+Enter password for user root:    < 输入 root >
+
+VALIDATE PASSWORD PLUGIN can be used to test passwords
+and improve security. It checks the strength of password
+and allows the users to set only those passwords which are
+secure enough. Would you like to setup VALIDATE PASSWORD plugin?
+
+Press y|Y for Yes, any other key for No: y
+The password validation plugin is not available. Proceeding with the further steps without the plugin.
+Using existing password for root.
+Change the password for root ? ((Press y|Y for Yes, any other key for No) : y   < 输入 >
+
+New password:             <输入: 123456>
+
+Re-enter new password:    <输入: 123456>
+By default, a MySQL installation has an anonymous user,
+allowing anyone to log into MySQL without having to have
+a user account created for them. This is intended only for
+testing, and to make the installation go a bit smoother.
+You should remove them before moving into a production
+environment.
+
+Remove anonymous users? (Press y|Y for Yes, any other key for No) : y   < 输入 >
+Success.
+
+
+Normally, root should only be allowed to connect from
+'localhost'. This ensures that someone cannot guess at
+the root password from the network.
+
+Disallow root login remotely? (Press y|Y for Yes, any other key for No) : y   < 输入 >
+Success.
+
+By default, MySQL comes with a database named 'test' that
+anyone can access. This is also intended only for testing,
+and should be removed before moving into a production
+environment.
+
+
+Remove test database and access to it? (Press y|Y for Yes, any other key for No) : n   < 输入 >
+
+ ... skipping.
+Reloading the privilege tables will ensure that all changes
+made so far will take effect immediately.
+
+
+
+Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y   < 输入 >
+Success.
+
+All done!
+
+
+
+
+
+
+
+
+
+
+

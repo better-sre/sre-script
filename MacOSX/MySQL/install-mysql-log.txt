@@ -1,0 +1,28 @@
+######################################################################
+# 安装说明:
+#   - 执行 brew install mysql 安装
+#   - 安装完, 下一步, 执行: mysql_secure_installation
+#   - 参考 init-mysql-step.txt 里每一步输入提示, 往下初始化.
+#
+######################################################################
+
+
+-> % brew install mysql
+
+==> Downloading https://homebrew.bintray.com/bottles/mysql-5.7.13.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring mysql-5.7.13.el_capitan.bottle.tar.gz
+==> Caveats
+We've installed your MySQL database without a root password. To secure it run:
+    mysql_secure_installation
+
+To connect run:
+    mysql -uroot
+    mysql -uroot -p <带密码>
+
+To start mysql:
+  brew services start mysql
+Or, if you don't want/need a background service you can just run:
+  mysql.server start
+==> Summary
+🍺  /usr/local/Cellar/mysql/5.7.13: 13,344 files, 445.0M
