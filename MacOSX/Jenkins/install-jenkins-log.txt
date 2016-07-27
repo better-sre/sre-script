@@ -1,0 +1,19 @@
+
+
+-> % brew install jenkins
+
+==> Downloading http://mirrors.jenkins-ci.org/war/2.15/jenkins.war
+==> Downloading from http://ftp-nyc.osuosl.org/pub/jenkins/war/2.15/jenkins.war
+######################################################################## 100.0%
+==> jar xvf jenkins.war
+==> Caveats
+Note: When using launchctl the port will be 8080.
+
+To restart jenkins after an upgrade:
+  brew services restart jenkins
+
+Or, if you don't want/need a background service you can just run:
+  jenkins
+
+==> Summary
+🍺  /usr/local/Cellar/jenkins/2.15: 6 files, 66.4M, built in 19 seconds
