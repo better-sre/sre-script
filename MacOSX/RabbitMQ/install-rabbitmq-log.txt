@@ -1,0 +1,74 @@
+
+#
+# 安装 rabbitmq:
+# 依赖: erlang
+#
+
+-> % brew install rabbitmq
+
+==> Installing dependencies for rabbitmq: xz, jpeg, libpng, libtiff, wxmac, erlang
+==> Installing rabbitmq dependency: xz
+==> Downloading https://homebrew.bintray.com/bottles/xz-5.2.2.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring xz-5.2.2.el_capitan.bottle.tar.gz
+🍺  /usr/local/Cellar/xz/5.2.2: 91 files, 1.4M
+==> Installing rabbitmq dependency: jpeg
+==> Downloading https://homebrew.bintray.com/bottles/jpeg-8d.el_capitan.bottle.2.tar.gz
+######################################################################## 100.0%
+==> Pouring jpeg-8d.el_capitan.bottle.2.tar.gz
+🍺  /usr/local/Cellar/jpeg/8d: 19 files, 713.7K
+==> Installing rabbitmq dependency: libpng
+==> Downloading https://homebrew.bintray.com/bottles/libpng-1.6.23.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring libpng-1.6.23.el_capitan.bottle.tar.gz
+🍺  /usr/local/Cellar/libpng/1.6.23: 25 files, 1.2M
+==> Installing rabbitmq dependency: libtiff
+==> Downloading https://homebrew.bintray.com/bottles/libtiff-4.0.6_2.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring libtiff-4.0.6_2.el_capitan.bottle.tar.gz
+🍺  /usr/local/Cellar/libtiff/4.0.6_2: 261 files, 3.4M
+==> Installing rabbitmq dependency: wxmac
+==> Downloading https://homebrew.bintray.com/bottles/wxmac-3.0.2_2.el_capitan.bottle.1.tar.gz
+######################################################################## 100.0%
+==> Pouring wxmac-3.0.2_2.el_capitan.bottle.1.tar.gz
+🍺  /usr/local/Cellar/wxmac/3.0.2_2: 809 files, 23.6M
+==> Installing rabbitmq dependency: erlang
+==> Downloading https://homebrew.bintray.com/bottles/erlang-19.0.2.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring erlang-19.0.2.el_capitan.bottle.tar.gz
+==> Caveats
+
+Man pages can be found in:
+  /usr/local/opt/erlang/lib/erlang/man
+
+Access them with `erl -man`, or add this directory to MANPATH.
+==> Summary
+🍺  /usr/local/Cellar/erlang/19.0.2: 7,292 files, 278.6M
+
+# 安装rabbitmq:
+
+==> Installing rabbitmq
+==> Downloading https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.3/rabbitmq-server-generic-unix-3.6
+######################################################################## 100.0%
+==> /usr/bin/unzip -qq -j /usr/local/Cellar/rabbitmq/3.6.3/plugins/rabbitmq_management-3.6.3.ez rabbitmq_
+==> Caveats
+Management Plugin enabled by default at http://localhost:15672
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+To restart rabbitmq after an upgrade:
+  brew services restart rabbitmq
+
+Or, if you don't want/need a background service you can just run:
+  rabbitmq-server
+
+==> Summary
+🍺  /usr/local/Cellar/rabbitmq/3.6.3: 186 files, 5.8M, built in 20 seconds
+
+
+
+
+
+
+
