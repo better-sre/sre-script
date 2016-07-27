@@ -1,0 +1,29 @@
+
+-> % brew install nginx
+
+==> Installing dependencies for nginx: pcre
+==> Installing nginx dependency: pcre
+==> Downloading https://homebrew.bintray.com/bottles/pcre-8.39.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring pcre-8.39.el_capitan.bottle.tar.gz
+🍺  /usr/local/Cellar/pcre/8.39: 203 files, 5.4M
+==> Installing nginx
+==> Downloading https://homebrew.bintray.com/bottles/nginx-1.10.1.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring nginx-1.10.1.el_capitan.bottle.tar.gz
+==> Caveats
+Docroot is: /usr/local/var/www
+
+The default port has been set in /usr/local/etc/nginx/nginx.conf to 8080 so that
+nginx can run without sudo.
+
+nginx will load all files in /usr/local/etc/nginx/servers/.
+
+To restart nginx after an upgrade:
+  brew services restart nginx
+
+Or, if you don't want/need a background service you can just run:
+  nginx
+
+==> Summary
+🍺  /usr/local/Cellar/nginx/1.10.1: 7 files, 972.2K
