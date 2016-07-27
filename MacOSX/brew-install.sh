@@ -18,8 +18,12 @@ brew install mobile-shell
 
 brew install openssl
 
+
+# 下载:
 brew install curl
 brew install wget
+brew install aria2
+
 
 brew install vim
 
@@ -32,23 +36,27 @@ brew install ctags
 brew install cscope
 
 brew install go
-brew install erlang
 
-brew install pyenv-virtualenv
+
+# python 开发环境,必装:
 brew install pyenv
+brew install pyenv-virtualenv
+
 
 # DB:
 brew install mongodb
 brew install mysql
 brew install redis
-brew install rabbitmq
 brew install sqlite
+brew install rabbitmq
 
 
 brew install jenkins
 
 # 注意版本:
 brew install nginx
-brew install tomcat7
+brew install tomcat
 
 brew install iperf3
+
+
