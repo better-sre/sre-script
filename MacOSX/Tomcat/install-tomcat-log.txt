@@ -1,0 +1,6 @@
+
+-> % brew install tomcat
+==> Downloading https://www.apache.org/dyn/closer.cgi?path=tomcat/tomcat-8/v8.5.4/bin/apache-tomcat-8.5.4
+==> Best Mirror http://apache.mirrors.pair.com/tomcat/tomcat-8/v8.5.4/bin/apache-tomcat-8.5.4.tar.gz
+######################################################################## 100.0%
+🍺  /usr/local/Cellar/tomcat/8.5.4: 632 files, 12.3M, built in 10 seconds
