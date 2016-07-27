@@ -1,0 +1,123 @@
+
+
+
+-> % brew install vim
+==> Installing dependencies for vim: perl, libyaml, ruby, gdbm, python
+==> Installing vim dependency: perl
+==> Downloading https://homebrew.bintray.com/bottles/perl-5.24.0_1.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring perl-5.24.0_1.el_capitan.bottle.tar.gz
+==> Caveats
+By default non-brewed cpan modules are installed to the Cellar. If you wish
+for your modules to persist across updates we recommend using `local::lib`.
+
+You can set that up like this:
+  PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
+  echo 'eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"' >> ~/.zshrc
+==> Summary
+🍺  /usr/local/Cellar/perl/5.24.0_1: 2,291 files, 55.1M
+==> Installing vim dependency: libyaml
+==> Downloading https://homebrew.bintray.com/bottles/libyaml-0.1.6_1.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+
+
+
+==> Pouring libyaml-0.1.6_1.el_capitan.bottle.tar.gz
+🍺  /usr/local/Cellar/libyaml/0.1.6_1: 8 files, 312.8K
+==> Installing vim dependency: ruby
+==> Downloading https://homebrew.bintray.com/bottles/ruby-2.3.1.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring ruby-2.3.1.el_capitan.bottle.tar.gz
+==> Caveats
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/ruby
+==> Summary
+🍺  /usr/local/Cellar/ruby/2.3.1: 1,260 files, 19.0M
+==> Installing vim dependency: gdbm
+==> Downloading https://homebrew.bintray.com/bottles/gdbm-1.12.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring gdbm-1.12.el_capitan.bottle.tar.gz
+🍺  /usr/local/Cellar/gdbm/1.12: 18 files, 490.7K
+==> Installing vim dependency: python
+==> Downloading https://homebrew.bintray.com/bottles/python-2.7.12.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring python-2.7.12.el_capitan.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/2to3
+Target /usr/local/bin/2to3
+already exists. You may want to remove it:
+  rm '/usr/local/bin/2to3'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run python
+
+
+
+Possible conflicting files are:
+/usr/local/bin/2to3 -> /Library/Frameworks/Python.framework/Versions/2.7/bin/2to3
+/usr/local/bin/2to3-2 -> /Library/Frameworks/Python.framework/Versions/2.7/bin/2to3-2
+/usr/local/bin/2to3-2.7 -> /Library/Frameworks/Python.framework/Versions/2.7/bin/2to3-2.7
+/usr/local/bin/idle -> /Library/Frameworks/Python.framework/Versions/2.7/bin/idle
+/usr/local/bin/idle2 -> /Library/Frameworks/Python.framework/Versions/2.7/bin/idle2
+/usr/local/bin/idle2.7 -> /Library/Frameworks/Python.framework/Versions/2.7/bin/idle2.7
+/usr/local/bin/pydoc -> /Library/Frameworks/Python.framework/Versions/2.7/bin/pydoc
+/usr/local/bin/pydoc2 -> /Library/Frameworks/Python.framework/Versions/2.7/bin/pydoc2
+/usr/local/bin/pydoc2.7 -> /Library/Frameworks/Python.framework/Versions/2.7/bin/pydoc2.7
+/usr/local/bin/python -> /Library/Frameworks/Python.framework/Versions/2.7/bin/python
+/usr/local/bin/python-config -> /Library/Frameworks/Python.framework/Versions/2.7/bin/python-config
+/usr/local/bin/python2 -> /Library/Frameworks/Python.framework/Versions/2.7/bin/python2
+/usr/local/bin/python2-config -> /Library/Frameworks/Python.framework/Versions/2.7/bin/python2-config
+/usr/local/bin/python2.7 -> /Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7
+/usr/local/bin/python2.7-config -> /Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7-config
+/usr/local/bin/pythonw -> /Library/Frameworks/Python.framework/Versions/2.7/bin/pythonw
+/usr/local/bin/pythonw2 -> /Library/Frameworks/Python.framework/Versions/2.7/bin/pythonw2
+/usr/local/bin/pythonw2.7 -> /Library/Frameworks/Python.framework/Versions/2.7/bin/pythonw2.7
+/usr/local/bin/smtpd.py -> /Library/Frameworks/Python.framework/Versions/2.7/bin/smtpd.py
+/usr/local/bin/smtpd2.7.py -> /Library/Frameworks/Python.framework/Versions/2.7/bin/smtpd2.7.py
+/usr/local/bin/smtpd2.py -> /Library/Frameworks/Python.framework/Versions/2.7/bin/smtpd2.py
+==> /usr/local/Cellar/python/2.7.12/bin/python -s setup.py --no-user-cfg install --force --verbose --sing
+==> /usr/local/Cellar/python/2.7.12/bin/python -s setup.py --no-user-cfg install --force --verbose --sing
+==> /usr/local/Cellar/python/2.7.12/bin/python -s setup.py --no-user-cfg install --force --verbose --sing
+==> Caveats
+Pip and setuptools have been installed. To update them
+  pip install --upgrade pip setuptools
+
+You can install Python packages with
+  pip install <package>
+
+They will install into the site-package directory
+  /usr/local/lib/python2.7/site-packages
+
+
+
+See: https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Homebrew-and-Python.md
+
+.app bundles were installed.
+Run `brew linkapps python` to symlink these to /Applications.
+
+==> Summary
+🍺  /usr/local/Cellar/python/2.7.12: 3,476 files, 46.7M
+
+
+==> Installing vim
+==> Downloading https://homebrew.bintray.com/bottles/vim-7.4.2085.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring vim-7.4.2085.el_capitan.bottle.tar.gz
+🍺  /usr/local/Cellar/vim/7.4.2085: 1,692 files, 22.7M
+
+
+
+
+
+
+
+
+
+
+
+
+
