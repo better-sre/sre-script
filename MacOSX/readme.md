@@ -82,4 +82,19 @@ brew cask uninstall --force  XXXX
 ```
 
 
+## 卸载 homebrew 工具本身:
+
+- 轻易不要卸载, 会导致所有通过 homebrew 安装的软件, 被自动删除.(代价有点高)
+- 安装 homebrew, 自动装 brew-cask 工具, 卸载同样.
+- [homebrew-FAQ](https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/FAQ.md)
+
+
+
+```
+
+# uninstall homebrew:
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+
+```
+
 
