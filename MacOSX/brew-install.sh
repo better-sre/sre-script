@@ -27,7 +27,10 @@ brew install aria2
 
 brew install vim
 
+# 目录快速跳转:
 brew install autojump
+
+# 目录树显示:
 brew install tree
 
 brew install gcc
