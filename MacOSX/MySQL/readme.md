@@ -2,6 +2,20 @@
 
 # MySQL 说明:
 
+## MySQL 配置:
+
+```
+#
+# 配置路径:
+#   - MySQL 数据库存放路径
+#   - pid 文件, log 文件
+#
+/usr/local/var/mysql
+
+
+
+```
+
 
 ## MySQL 启动, 登录, 退出:
 
