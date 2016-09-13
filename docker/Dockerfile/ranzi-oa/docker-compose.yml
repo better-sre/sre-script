@@ -1,0 +1,65 @@
+##################################################################
+#
+# docker compose 配置文件说明:
+#
+# docker-compose.yml 需要和 Dockerfile 文件,在同一目录下.
+#
+# 官方参考文档:
+#   - https://docs.docker.com/compose/gettingstarted/
+#   - https://docs.docker.com/compose/compose-file/
+#   - https://docs.docker.com/compose/rails/
+#
+# 常用命令:  (查看帮助: docker-compose --help)
+#   - 启动:
+#        - docker-compose up      # boot the app
+#        - docker-compose up -d   # 后台运行
+#   - 查看启动进程:
+#        - docker-compose ps
+#   - 其他:
+#        - docker-compose build              # build the image
+#        - docker-compose run web env
+#        - docker-compose stop
+#
+# yaml配置文件说明:
+#   - 是一种比json更优雅,简洁的配置文件格式
+#   - 语法很简单
+#
+#
+##################################################################
+
+oa_server:
+  build: ./                        # 根据当前目录下的 Dockerfile, 构建 image, 并命名为 image 名
+  image: ranzhi:20160815           # 构建, 并命名镜像名: ranzhi:20160815
+  container_name: ranzhi-v1.0      # 指定 容器名
+  ports:
+    - "80": "8001"                 # 端口映射: [容器内: 宿主机]
+  expose:
+    - "80"                         # 端口暴露: 容器之间 link 用
+  restart: always                  # 自动重启
+  command: /opt/zbox/zbox start    # 启动服务
+
+
+# 执行/opt/zbox/zbox start 命令开启Apache和Mysql。
+# 执行/opt/zbox/zbox stop 命令停止Apache和Mysql。
+# 执行/opt/zbox/zbox restart 命令重启Apache和Mysql。
+# 使用/opt/zbox/zbox -h命令 来获取关于zbox命令的帮助
+
+
+
+
+#mongo:
+#  image: mongo:3.1
+#  volumes:
+#    - /data/db31:/data/db
+#  expose:
+#    - "27017"
+#  command: mongod --storageEngine wiredTiger --dbpath /data/db
+
+
+
+#$ ls
+#Dockerfile   app          docker-compose.yml      tmp
+#Gemfile      bin          lib          vendor
+#Gemfile.lock config       log
+#README.rdoc  config.ru    public
+#Rakefile     db           test
