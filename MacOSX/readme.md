@@ -5,7 +5,7 @@
 
 ```bash
 -> % brew
- 
+
 Example usage:
   brew search [TEXT|/REGEX/]
   brew (info|home|options) [FORMULA...]
@@ -37,7 +37,7 @@ Further help:
 brew uninstall --force curl
 
 
-# Makes you owner of /usr/local 
+# Makes you owner of /usr/local
 
 $ sudo chown -R `whoami` /usr/local
 
@@ -63,6 +63,18 @@ $ brew doctor
 ```
 
 
+## homebrew 安装路径:
+
+- 默认所有通过 brew 安装的软件包路径
+
+```bash
+
+/usr/local/Cellar
+
+
+```
+
+
 
 ## brew cask 命令:
 
@@ -72,7 +84,7 @@ $ brew doctor
 ```bash
 
 # 查看APP信息:
-brew cask info squirrel    
+brew cask info squirrel
 
 
 # 强制卸载:
