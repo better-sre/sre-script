@@ -38,8 +38,13 @@ brew install cmake
 brew install ctags
 brew install cscope
 
+
+#########################
+#     语言开发
+#########################
 brew install go
 
+brew install node
 
 # python 开发环境,必装:
 brew install pyenv
