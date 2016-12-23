@@ -16,6 +16,9 @@ cnpm install -g eslint
 
 # tool:
 cnpm install -g grunt-cli
+cnpm install -g webpack
+cnpm install -g webpack-dev-server
+
 
 # check version:
 grunt --version
