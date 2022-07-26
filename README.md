@@ -1,5 +1,12 @@
 # awesome-script
 
+## 迁移: 
+
+- https://github.com/better-sre/config
+    - 请参考此项目脚本, 后续更新在此.
+    - 基于 go-task, 包含各种安装脚本
+
+
 ## 项目说明:
 
 ### 初衷:
